@@ -14,3 +14,23 @@
 }
 
 /* Put CSS Styles Here */
+body {
+    font-family: "Inter UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-family: "Metropolis", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "Metropolis", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: "Metropolis", Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-family: "Metropolis", Arial, Helvetica, sans-serif;
+}
