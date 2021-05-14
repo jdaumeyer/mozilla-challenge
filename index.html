@@ -19,7 +19,7 @@
         </div>
 
         <nav class="topNav">
-                    <a href="javascript:void(0);" class="topNavToggle">Menu</a>
+            <a href="javascript:void(0);" class="topNavToggle">Menu  <i class="fa fa-angle-down animation-flip" aria-hidden="true"></i></a>
             <ul class="invisible">
                 <li><a href="">Home</a></li>
                 <li><a href="">FAQ</a></li>
@@ -42,14 +42,14 @@
 
         <section id="section2">
 
-            <div>
-            <button class="button2 invisible"> Add account name <i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <div id="test">
+                <button class="button2 invisible"> Add account name <i class="fa fa-pencil" aria-hidden="true"></i></button>
 
-            <label class="toggle">
-                forwarding
-                <input type="checkbox" />
-                <span class="slider"></span>
-            </label>
+                <label class="switch">
+                    forwarding
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                </label>
 
             </div>
 
@@ -62,9 +62,7 @@
                             <button class="button2"><i class="fa fa-files-o" aria-hidden="true"></i></button>
                         </h4>
                     </div>
-                    <label class="toggle">
-                        Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </label>
+                    <button class="button2" id="show-details">Show Details <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                 </div>
 
                 <div class="email-info-stats">
@@ -80,10 +78,10 @@
                     </div>
                 </div>
 
-            </section>
+            </div>
 
             <p>Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
-        </div>
+        </section>
 
     </content>
 
