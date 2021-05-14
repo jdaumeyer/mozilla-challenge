@@ -94,16 +94,21 @@ header {
 
 #relay-logo {
   display: block;
-  height: 1.5em;
+  height: 2em;
   width: auto;
   flex-grow: 1;
 }
 
 #relay-logo-box {
   flex-grow: 1;
+  padding: 1em;
 }
 
 .invisible {
+  display: none;
+}
+
+.closed {
   display: none;
   flex: 0 0 auto !important;
 }
@@ -181,10 +186,35 @@ hr {
 .email-info {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #f1f1f1;
   box-shadow: 1px 2px 1px 1px grey;
   border-radius: 5px;
+}
+
+.email-info-header {
+  background-color: white;
   padding: 0.5em;
+  border-radius: 5px 0px;
+}
+
+.info {
+  padding: 0.5em;
+  width: auto;
+}
+
+/* Info sub elements */
+.info span:nth-child(2) {
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.info span.date {
+  font-size: 1em;
+}
+
+.faded {
+  color: #b2b2b2 !important;
 }
 
 
@@ -193,7 +223,7 @@ hr {
   display: none;
 }
 
-#test {
+.container {
   width: 100%;
   height: 2em;
 }
