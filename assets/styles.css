@@ -256,3 +256,31 @@ button {
 }
 
 
+/*
+ * ==========
+ * = Footer =
+ * ==========
+ */
+
+footer {
+  background-color: #2a274e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#mozilla-logo {
+  height: 3em;
+  width: auto;
+  padding: 1em;
+}
+
+footer nav ul {
+  padding: 0;
+}
+
+footer nav li {
+  text-align:center;
+  padding: 1em;
+}
