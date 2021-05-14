@@ -20,7 +20,7 @@
 
         <nav class="topNav">
                     <a href="javascript:void(0);" class="topNavToggle">Menu</a>
-            <ul>
+            <ul class="invisible">
                 <li><a href="">Home</a></li>
                 <li><a href="">FAQ</a></li>
             </ul>
@@ -33,37 +33,41 @@
 
 
     <content>
-        <div class="">
+        <section id="section1">
             <h2> Manage your Relay Aliases </h2>
-            <p> {number} remaining aliases </p>
             <hr />
-            <button> <i class="fa fa-plus" aria-hidden="true"></i> Generate New Alias </button>
-        </div>
+            <button class="button1 font-metropolis"> <i class="fa fa-plus" aria-hidden="true"></i> Generate New Alias </button>
+            <p class="alias-count"><strong>4</strong> remaining aliases </p>
+        </section>
 
-        <div>
+        <section id="section2">
 
             <div>
-            <button> Add account name <i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <button class="button2 invisible"> Add account name <i class="fa fa-pencil" aria-hidden="true"></i></button>
 
-            <label class="switch">
+            <label class="toggle">
                 forwarding
-                <input type="checkbox">
+                <input type="checkbox" />
                 <span class="slider"></span>
             </label>
 
             </div>
 
 
-            <div>
-                <div>
+            <div class="email-info">
+                <div class="email-info-header">
                     <div>
-                        <h4> {email address} </h4>
-                        <button><i class="fa fa-files-o" aria-hidden="true"></i></button>
+                        <h4>
+                            wysiwyg143@relay.firefox.com
+                            <button class="button2"><i class="fa fa-files-o" aria-hidden="true"></i></button>
+                        </h4>
                     </div>
-                    <button> Show Details <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <label class="toggle">
+                        Show Details <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </label>
                 </div>
 
-                <div>
+                <div class="email-info-stats">
 
                     <div>
                         <span> 0 </span>
@@ -76,7 +80,7 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
 
             <p>Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
         </div>
