@@ -1,9 +1,17 @@
 (function() {
 	"use strict";
 
+	// Add Scripts Here
+
+	// Top Nav
 	const toggleTopNavButton = document.querySelector(".topNavToggle")
 	const topNav = document.querySelector(".topNav")
-	// Add Scripts Here
+
+	// Show Details
+	const showDetailsButton = document.getElementById("show-details")
+	const details = document.getElementsByClassName("email-details")[0]
+
+
 	var toggleTopNav = function() {
 		topNav.getElementsByTagName("ul")[0].classList.toggle("invisible")
 
@@ -23,4 +31,10 @@
 	toggleTopNavButton.addEventListener("click", function(e){
 		toggleMenu(topNav.getElementsByTagName("ul")[0], toggleTopNavButton)
 	})
+
+	showDetailsButton.addEventListener("click", function(e) {
+		toggleMenu(details, showDetailsButton)
+	})
+
+
 })();
