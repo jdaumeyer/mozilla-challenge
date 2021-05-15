@@ -256,10 +256,11 @@ button {
   font-weight: bold;
 }
 
-.info span.date {
+.info span.string {
   font-size: 1em;
   font-weight: normal;
 }
+
 
 .faded {
   color: #b2b2b2 !important;
@@ -321,4 +322,19 @@ footer nav ul {
 footer nav li {
   text-align:center;
   padding: 1em;
+}
+
+
+/*
+ * =================
+ * = Media Queries =
+ * =================
+ */
+
+
+/* Query for desktop design */
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url("assets/img/background.svg");
+  }
 }
