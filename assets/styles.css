@@ -70,6 +70,7 @@ a {
 header {
   background-color: #2a274e;
   color: #fcfcfc;
+  min-height: 6em;
 
 
   display: flex;
@@ -170,6 +171,12 @@ nav.topNav ul li:nth-child(even) {
  * = Content =
  * ===========
  */
+
+content {
+  /* Sized to push the header to the bottom of the page */
+  display: block;
+  min-height: calc(100vh - 26em);
+}
 hr {
   margin: 0.5em 0;
   width: 80%;
@@ -292,10 +299,13 @@ button {
 
 footer {
   background-color: #2a274e;
+  positon: relative;
+  height: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  bottom: 0;
 }
 
 #mozilla-logo {
