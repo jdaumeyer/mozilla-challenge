@@ -143,7 +143,6 @@ nav.topNav ul {
   tansform: scaleY(1);
   max-height: 5em;
   border: none;
-  flex: 1 0 auto;
   width: 100%;
   margin: 0;
 }
@@ -335,6 +334,88 @@ footer nav li {
 /* Query for desktop design */
 @media screen and (min-width: 600px) {
   body {
-    background-image: url("assets/img/background.svg");
+    background-image: url(/assets/img/background.svg);
+    background-position: center;
+  }
+
+  /*
+   * ================================
+   * = Reorganized Flex-box content =
+   * ================================
+   */
+
+  /* Nav Flexbox */
+  #relay-logo-box {
+    order: -2;
+  }
+
+  nav.topNav {
+    order: -1;
+    flex: 0 auto;
+    background-color: #2a274e;
+    flex-direction: row;
+    width: auto;
+  }
+
+  nav.topNav ul {
+    float: none;
+
+  }
+
+  nav.topNav ul>li {
+    display: inline;
+    border: none;
+    padding: 0.4em 1em;
+  }
+
+  .selected {
+    position: relative;
+    padding-bottom: 0.2em;
+  }
+
+  .selected::after {
+    background: white;
+    background: var(--navGradient);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  nav.topNav ul li:nth-child(even) {
+    /* remove mobile separator */
+    border: none;
+  }
+
+
+  /* Section 1 Flex-box */
+  #section1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #section1 h2 {
+    order: -2;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  #section1 hr {
+    flex: 1 0 100%;
+    width: auto;
+  }
+
+  #section1 button {
+    justify-self: end;
+  }
+
+
+  .alias-count {
+    order: -1;
   }
 }

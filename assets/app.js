@@ -17,6 +17,9 @@
 		for (let e of document.getElementsByClassName("forwardto")) {
 			e.classList.toggle("invisible")
 		}
+		for (let e of document.getElementsByClassName("change-name")) {
+			e.classList.toggle("invisible")
+		}
 	}
 
 	/*
