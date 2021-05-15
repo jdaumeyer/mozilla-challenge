@@ -397,6 +397,8 @@ footer nav li {
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    justify-content: flex-end;
+    margin-bottom: 5em;
   }
 
   #section1 h2 {
