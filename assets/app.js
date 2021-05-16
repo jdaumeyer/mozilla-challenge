@@ -11,9 +11,19 @@
 	const showDetailsButton = document.getElementById("show-details")
 	const details = document.getElementsByClassName("info")
 
+	// Copy Button
+	const copyButton = document.getElementsByClassName("copy")[0]
+	const copyMessage = document.getElementById("copy-message")
+
+
 	if (window.screen.width >= 600) {
+
+		// Disable the menu button on large screens
 		topNavButton.classList.toggle("invisible")
 		topNavList[0].classList.toggle("closed")
+
+		// Show hidden elements on large screens
+		// These are in loops because I assume there would be multiple on the actual site
 		for (let e of document.getElementsByClassName("forwardto")) {
 			e.classList.toggle("invisible")
 		}
@@ -42,5 +52,14 @@
 		toggleMenu(details, showDetailsButton)
 	})
 
+	copyButton.addEventListener("click", function(e) {
+		copyMessage.classList.toggle("closed")
+		copyMessage.style.top = ((e.clientY - 50) + document.documentElement.scrollTop) + "px"
+		copyMessage.style.left = (e.clientX - 50) + "px"
+
+		setTimeout(function() {
+			copyMessage.classList.toggle("closed")
+		}, 1000)
+	})
 
 })();

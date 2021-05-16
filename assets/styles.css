@@ -210,6 +210,18 @@ button {
   padding: 0;
 }
 
+#copy-message {
+  position: absolute;
+  top: 100;
+  left: 100;
+  background-color: #2a274e;
+  color: #fcfcfc;
+  border-radius: 5px;
+  padding: 0.2em 1em;
+  transition: 300ms;
+  max-height: 2em;
+  transform-origin: top center;
+}
 
 /*
  * ==============
@@ -396,9 +408,8 @@ footer nav li {
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-    margin: 0 auto;
+    margin: 5em auto 2em auto;
     justify-content: flex-end;
-    margin-bottom: 5em;
   }
 
   #section1 h2 {
