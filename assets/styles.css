@@ -210,6 +210,27 @@ button {
   padding: 0;
 }
 
+.button3 {
+  background-color: white;
+  border-radius: 5px;;
+  border: none;
+  width: 100%;
+  max-height: 4em;
+  min-height: 2em;
+  transition: 250ms;
+  margin: auto;
+}
+
+.button3:hover {
+  background-color: lightred;
+}
+
+.button3:active {
+  opacity: 0.6;
+  background-color: red;
+  color: white;
+}
+
 #copy-message {
   position: absolute;
   top: 100;
@@ -237,6 +258,7 @@ button {
 .email-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: #f1f1f1;
   box-shadow: 0px 0px 1px 1px lightgrey;
   border-radius: 5px;
@@ -270,6 +292,10 @@ button {
 .info span.string {
   font-size: 1em;
   font-weight: normal;
+}
+
+.info .label {
+  color: #767676;
 }
 
 
@@ -430,5 +456,64 @@ footer nav li {
 
   .alias-count {
     order: -1;
+  }
+
+  /* Email info flexbox */
+  .email-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .email-info-header {
+    flex: 3 auto;
+
+  }
+
+  .info {
+    flex: 2 auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 4em;
+  }
+
+  .info.delete {
+    flex-grow: 0.5;
+  }
+
+  .blocked {
+    flex: 1 auto;
+    background-color: white;
+  }
+
+  .forwarded {
+    flex: 1 auto;
+    background-color: white;
+    height: auto;
+  }
+
+  .big-number .number {
+    font-size: 2em !important;
+    width: 100%;
+  }
+
+  /* counteract the hiding of big-number elements */
+
+  .big-number.closed {
+    max-height: 8em !important;
+    padding: 0.5em !important;
+    opacity: 1;
+  }
+
+  .big-number {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-height: 8em;
+  }
+
+
+  /* Used to create a new row in the flexbox */
+  .separator {
+    flex-basis: 100%;
+    height: 0;
   }
 }
