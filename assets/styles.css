@@ -166,12 +166,12 @@ nav.topNav ul li:nth-child(even) {
 
 
 /*
- * ===========
- * = Content =
- * ===========
+ * =====================
+ * = Main Page Content =
+ * =====================
  */
 
-content {
+main {
   /* Sized to push the header to the bottom of the page */
   display: block;
   min-height: calc(100vh - 26em);
@@ -379,7 +379,7 @@ footer nav li {
     background-position: center;
   }
 
-  content {
+  main {
     min-height: calc(90vh - 11.125em);
   }
 

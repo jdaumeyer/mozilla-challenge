@@ -32,7 +32,7 @@
     </header>
 
 
-    <content>
+    <main>
         <div id="copy-message" class="closed">Copied!</div>
         <section id="section1">
             <h2> Manage your Relay Aliases </h2>
@@ -55,6 +55,7 @@
             </div>
 
 
+            <!-- Not a detail tag because that functionaliy will be done with javascript -->
             <div class="email-info">
                 <div class="email-info-header">
                     <div>
@@ -66,28 +67,35 @@
                     <button class="button2" id="show-details">Show Details <i class="fa fa-angle-down animation-flip" aria-hidden="true"></i></button>
                 </div>
 
+                <!-- Blocked Emails -->
                 <div class="faded info blocked big-number closed">
                     <span class="label"> Blocked </span>
                     <span class="number font-metropolis"> 0 </span>
                 </div>
 
+                <!-- Forwareded Emails -->
                 <div class="info forwarded big-number closed">
                     <span class="label"> Forwarded </span>
                     <span class="number font-metropolis"> 0 </span>
                 </div>
 
+                <!-- Used for the desktop view to force a flexbox wrap -->
                 <div class="separator"></div>
 
+                <!-- Date Email Created -->
                 <div class="info created closed">
                     <span class="label"> Created: </span>
                     <span class="string"> May 10, 2021 </span>
                 </div>
 
+
+                <!-- Address to Forward too -->
                 <div class="info forwardto invisible closed">
                     <span class="label">Forward Emails to</span>
                     <span class="string">jackson.daumeyer@gmail.com</span>
                 </div>
 
+                <!-- Delete Email Button -->
                 <div class="info delete closed">
                     <button class="button3"> Delete </button>
                 </div>
@@ -97,7 +105,8 @@
             <p>Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
         </section>
 
-    </content>
+
+    </main>
 
 
     <footer>
