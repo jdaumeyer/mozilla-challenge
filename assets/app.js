@@ -55,7 +55,7 @@
 	copyButton.addEventListener("click", function(e) {
 		copyMessage.classList.toggle("closed")
 		copyMessage.style.top = ((e.clientY - 50) + document.documentElement.scrollTop) + "px"
-		copyMessage.style.left = (e.clientX - 50) + "px"
+		copyMessage.style.left = (e.clientX - 40) + "px"
 
 		setTimeout(function() {
 			copyMessage.classList.toggle("closed")
