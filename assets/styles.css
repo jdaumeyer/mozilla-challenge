@@ -186,6 +186,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5em auto 3em auto;
 }
 
 /* Remove outline on chrome */
@@ -220,10 +221,11 @@ button {
   min-height: 2em;
   transition: 250ms;
   margin: auto;
+  border: 1px solid white;
 }
 
 .button3:hover {
-  background-color: lightred;
+  border: 1px solid red;
 }
 
 .button3:active {
@@ -253,7 +255,7 @@ button {
 
 #section2 {
   width: 80%;
-  margin: 0 auto;
+  margin: 5em auto 5em auto;
 }
 
 .email-info {
@@ -378,7 +380,7 @@ footer nav li {
   }
 
   content {
-    height: 70vh;
+    min-height: calc(90vh - 11.125em);
   }
 
   .button3 {
@@ -443,7 +445,6 @@ footer nav li {
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-    margin: 5em auto 2em auto;
     justify-content: flex-end;
   }
 
@@ -528,6 +529,8 @@ footer nav li {
     justify-content: space-between;
     min-height: 2em;
     max-height: 6em;
+    position: relative;
+    bottom: 0;
   }
 
   footer nav ul {
