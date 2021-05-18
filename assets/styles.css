@@ -30,7 +30,7 @@ h1 {
 
 h2 {
     font-family: "Metropolis", Arial, Helvetica, sans-serif;
-    font-size: 1.25em;
+    font-size: 1.75em;
     text-align: center;
     margin: 1em 0 0.2em 0;
 }
@@ -41,6 +41,7 @@ h3 {
 
 h4 {
     font-family: "Metropolis", Arial, Helvetica, sans-serif;
+    height: 1.5em;
     margin: 0.3em 0;
 }
 
@@ -55,9 +56,9 @@ h4 {
 nav ul {
   list-style: none;
   padding: 0;
-  float: right;
   align-self: flex-end;
 }
+
 nav li {
   text-align: right;
 }
@@ -227,8 +228,28 @@ button {
   border: none;
   color: white;
   border-radius: 5px;
+  min-height: 2em;
+  font-size: 1.1em;
   padding: 0.5em 1em;
   cursor: pointer;
+  transition: 200ms;
+  transform: rotate(0deg);
+}
+
+.button1::before {
+  content: "\f067";
+  font-family: FontAwesome;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: 250ms;
+}
+
+.button1:hover::before{
+  transform: rotate(90deg);
+}
+
+.button1:active {
+  background-color: blue;
 }
 
 .button2 {
@@ -237,6 +258,7 @@ button {
   color: #aaaaaa;
   cursor: pointer;
   padding: 0;
+  min-height: 1em;
 }
 
 .button3 {
