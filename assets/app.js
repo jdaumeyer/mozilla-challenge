@@ -70,6 +70,18 @@
 		copyMessage.style.top = ((e.clientY - 50) + document.documentElement.scrollTop) + "px";
 		copyMessage.style.left = (e.clientX - 40) + "px";
 
+		// Actually Copy the Text
+		const textarea = document.createElement('textarea');
+
+		let copyText = document.getElementsByTagName("h4")[0].innerText;
+
+		// Set the textarea text to copyText, select it then copy it
+		textarea.value = copyText;
+		document.body.appendChild(textarea);
+		textarea.select();
+		document.execCommand('copy');
+		document.body.removeChild(textarea);
+
 		// Hide copy message again after a bit
 		setTimeout(function() {
 			copyMessage.classList.toggle("closed");
