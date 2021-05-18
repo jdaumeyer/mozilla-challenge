@@ -171,6 +171,19 @@ nav.topNav ul li:nth-child(even) {
   box-shadow: 0px 3px 10px -6px black;
 }
 
+.selected::before {
+  display: inline-block;
+  position: relative;
+  right: 0.4em;
+  bottom: 0.1em;
+  content: "";
+  width: 0.4em;
+  height: 0.4em;
+  background: var(--navGradient);
+  border-radius: 50%;
+
+}
+
 
 
 /*
@@ -255,11 +268,9 @@ button {
 label {
   float: right;
   display: flex;
+  gap: 1em;
   align-items: center;
-}
-
-label span:nth-child(1) {
-  margin-right: 1em;
+  color: #aaaaaa;
 }
 
 .switch input {
@@ -315,6 +326,7 @@ input:checked + .slider:before {
   transition: 300ms;
   max-height: 2em;
   transform-origin: top center;
+  z-index: 999;
 }
 
 /*
@@ -437,7 +449,7 @@ footer nav li {
 @media screen and (min-width: 600px) {
   body {
     background-image: url(/assets/img/background.svg);
-    background-position: center;
+    background-position: top center;
   }
 
   main {
@@ -481,6 +493,10 @@ footer nav li {
   .selected {
     position: relative;
     padding-bottom: 0.2em;
+  }
+
+  .selected::before {
+    display: none;
   }
 
   .selected::after {
