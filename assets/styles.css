@@ -30,7 +30,7 @@ h1 {
 
 h2 {
     font-family: "Metropolis", Arial, Helvetica, sans-serif;
-    font-size: 1.75em;
+    font-size: 1.625em;
     text-align: center;
     margin: 1em 0 0.2em 0;
 }
@@ -115,6 +115,7 @@ header>* {
 
 #relay-logo-box {
   flex-grow: 1;
+  margin: 1em 0.2em 1em 0.2em;
 }
 
 .invisible {
@@ -223,6 +224,7 @@ button {
   outline: none;
 }
 
+/* Big Blue Button */
 .button1 {
   background-color: #0060df;
   border: none;
@@ -252,6 +254,7 @@ button {
   background-color: blue;
 }
 
+/* Secondary Text-like button */
 .button2 {
   background: none;
   border: none;
@@ -261,6 +264,7 @@ button {
   min-height: 1em;
 }
 
+/* Delete Button */
 .button3 {
   background-color: white;
   border-radius: 5px;;
@@ -276,12 +280,11 @@ button {
 }
 
 .button3:hover {
-  border: 1px solid red;
+  border: 1px solid #f10366;
 }
 
 .button3:active {
-  opacity: 0.6;
-  background-color: red;
+  background-color: #f10366;
   color: white;
 }
 
@@ -311,6 +314,7 @@ label span:first-child {
   height: 18px;
 }
 
+/* The box around the slider */
 .slider {
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
@@ -320,14 +324,7 @@ label span:first-child {
   transition: 400ms
 }
 
-input:checked + .slider:before {
-  transform: translateX(14px);
-}
-
-.switch input:checked + span.slider {
-  background-color: #0060df;
-}
-
+/* The little circle in the slider box */
 .slider:before {
   position: absolute;
   content: "";
@@ -340,6 +337,16 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.switch input:checked + span.slider {
+  background-color: #0060df;
+}
+
+
+/* Used for the floating copy message */
 #copy-message {
   position: absolute;
   top: 100;
@@ -389,7 +396,6 @@ input:checked + .slider:before {
   transition: 0.2s linear;
   transform: scaleY(1);
 
-  /* Dirty hack to hide bottom border of email-info-header */
 }
 
 /* Info sub elements */
@@ -494,6 +500,7 @@ footer nav li {
   /* Nav Flexbox */
   #relay-logo-box {
     order: -2;
+    margin: 1em;
   }
 
   nav.topNav {
