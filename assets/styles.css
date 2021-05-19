@@ -290,9 +290,12 @@ button {
 label {
   float: right;
   display: flex;
-  gap: 1em;
   align-items: center;
   color: #aaaaaa;
+}
+
+label span:first-child {
+  margin-right: 1em;
 }
 
 .switch input {
@@ -304,8 +307,8 @@ label {
 .switch {
   position: relative;
   display: inline-block;
-  width: 32px;
-  height: 16px;
+  width: 30px;
+  height: 18px;
 }
 
 .slider {
@@ -318,7 +321,7 @@ label {
 }
 
 input:checked + .slider:before {
-  transform: translateX(16px);
+  transform: translateX(14px);
 }
 
 .switch input:checked + span.slider {
@@ -331,7 +334,7 @@ input:checked + .slider:before {
   height: 12px;
   width: 12px;
   left: 2px;
-  bottom: 2px;
+  bottom: 3px;
   background-color: white;
   transition: 0.4s;
   border-radius: 50%;
@@ -564,6 +567,8 @@ footer nav li {
 
 
   .alias-count {
+    margin-bottom: 0.2em;
+    align-self: flex-end;
     order: -1;
   }
 
